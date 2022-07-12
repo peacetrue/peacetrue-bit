@@ -1,0 +1,33 @@
+= Common Scope
+
+common scope 存储通用组件。
+
+
+.初始化工作空间(目录不存在)
+[source%nowrap,bash]
+----
+$ bit new react peacetrue-bit -d peacetrue.common
+$ cd peacetrue-bit
+$ rm -rf .vscode README.md
+$ bit start
+----
+
+.初始化工作空间(目录已存在)
+[source%nowrap,bash]
+----
+$ bit new react react -d peacetrue.common --skip-git
+$ mv react/* react/.* .
+$ rm -rf react .vscode README.md
+$ sed -i "" 's|"name": "react"|"name": "peacetrue-bit"|g' workspace.jsonc
+$ bit start
+----
+
+.创建测试组件
+[source%nowrap,bash]
+----
+$ bit create react test
+$ bit tag test
+$ cd peacetrue-bit
+$ rm -rf .vscode README.md
+$ bit start
+----
