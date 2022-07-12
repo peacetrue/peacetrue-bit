@@ -1,0 +1,8 @@
+= bit 组件
+peace <xiayouxue@hotmail.com>
+v1.0, 2022-07-12: SNAPSHOT
+:app-name: peacetrue-bit
+
+本仓库存储基于 https://bit.dev[bit^] 实现的组件。
+
+详情参考 https://peacetrue.cn/summarize/peacetrue-bit/index.html[安宁的博客^]。

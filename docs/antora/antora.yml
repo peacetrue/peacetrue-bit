@@ -1,0 +1,11 @@
+name: peacetrue-bit
+title: bit 组件
+version: master
+asciidoc:
+  attributes:
+    numbered: '@'
+    source-options: '%snowrap@'
+    app-name: peacetrue-bit
+start_page: ROOT:index.adoc
+nav:
+  - modules/ROOT/nav.adoc
