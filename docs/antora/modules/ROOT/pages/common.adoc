@@ -22,12 +22,15 @@ $ sed -i "" 's|"name": "react"|"name": "peacetrue-bit"|g' workspace.jsonc
 $ bit start
 ----
 
-.创建测试组件
+== 创建本地部署组件
+
 [source%nowrap,bash]
 ----
-$ bit create react test
-$ bit tag test
-$ cd peacetrue-bit
-$ rm -rf .vscode README.md
-$ bit start
+$ bit create node deployers/local-factory
+$ bit tag deployers/local-factory -m '创建本地部署组件'
+$ bit export
 ----
+
+查看 https://bit.cloud/peacetrue/common/deployers/local-factory[远程仓库^] 效果：
+
+image::image-2022-07-13-06-05-22-696.png[]
