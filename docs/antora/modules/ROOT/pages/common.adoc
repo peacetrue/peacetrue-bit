@@ -34,3 +34,11 @@ $ bit export
 查看 https://bit.cloud/peacetrue/common/deployers/local-factory[远程仓库^] 效果：
 
 image::image-2022-07-13-06-05-22-696.png[]
+
+.实现组件
+[source%nowrap,bash]
+----
+$ bit install fs-extra
+$ bit tag deployers/local-factory -m '实现本地部署组件'
+$ bit export
+----

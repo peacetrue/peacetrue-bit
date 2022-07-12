@@ -1,10 +1,12 @@
 ---
 labels: ['module']
-description: 'A general purpose node module'
+description: '本地部署器工厂，用于创建一个本地部署器。'
 ---
 
 API:
 
 ```ts
-function localFactory(): string;
+import type {localFactoryProps} from "./local-factory";
+import type {DeployFn} from '@teambit/application';
+function localFactory(props: localFactoryProps): DeployFn;
 ```
