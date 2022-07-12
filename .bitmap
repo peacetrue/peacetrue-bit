@@ -9,6 +9,12 @@
  */
 
 {
+    "apps/react-app": {
+        "scope": "peacetrue.common",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "common/apps/react-app"
+    },
     "deployers/local-factory": {
         "scope": "peacetrue.common",
         "version": "0.0.2",

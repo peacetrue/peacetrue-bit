@@ -42,3 +42,18 @@ $ bit install fs-extra
 $ bit tag deployers/local-factory -m '实现本地部署组件'
 $ bit export
 ----
+
+
+== 创建 React 应用模板
+
+[source%nowrap,bash]
+----
+$ bit create react apps/react-app
+$ bit install react-router-dom -t peer
+$ bit use apps/react-app
+$ bit run react-app
+$ bit tag apps/react-app -m '实现 React 应用组件'
+$ bit export
+$ rm -rf react-app
+----
+
